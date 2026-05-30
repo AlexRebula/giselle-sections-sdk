@@ -38,6 +38,15 @@ No JSX. No MUI. No personal content. Just types, builders, utilities, and sample
 - tsup for building (ESM + CJS)
 - No runtime UI framework dependency — consumers bring their own
 
+## Cross-agent behavior guardrails (Karpathy baseline)
+
+Apply these defaults on every task unless a stricter repo rule overrides them.
+
+1. **Think before coding.** State assumptions. If multiple interpretations exist, present them and ask when uncertain.
+2. **Simplicity first.** Implement the minimum solution that satisfies the request. Do not add speculative abstraction, configurability, or extra features.
+3. **Surgical changes.** Touch only what is required for the request. Avoid unrelated refactors, formatting drift, or drive-by cleanup.
+4. **Goal-driven execution.** Define verifiable success criteria and close the loop with checks (tests, lint, typecheck, or explicit validation).
+
 ## Brand identity — the Giselle mango tree
 
 The Giselle ecosystem is named after the Filipino wife of the author. The Philippine national fruit is the Carabao mango — both the logo mark and the ecosystem metaphor.
@@ -56,10 +65,10 @@ Ripeness scale: 🟢 green = alpha · 🟡 yellow-green = beta · 🟠 golden = 
 
 At the start of every new Copilot session in this package, read these files:
 
-| File | Purpose |
-|------|---------|
-| [`docs/architecture.md`](../docs/architecture.md) | Design rationale: the sections-api pattern, why this is open-source, provider model, migration path |
-| [`docs/implementation-plan.md`](../docs/implementation-plan.md) | Per-phase task checklist with `[x]` / `[ ]` status |
+| File                                                            | Purpose                                                                                             |
+| --------------------------------------------------------------- | --------------------------------------------------------------------------------------------------- |
+| [`docs/architecture.md`](../docs/architecture.md)               | Design rationale: the sections-api pattern, why this is open-source, provider model, migration path |
+| [`docs/implementation-plan.md`](../docs/implementation-plan.md) | Per-phase task checklist with `[x]` / `[ ]` status                                                  |
 
 ### Current status
 
